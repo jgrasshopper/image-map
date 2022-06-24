@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Image Map</title>
+  </head>
+  <body>
+    <div class="img_map">
+      <img
+        src="img/Front-end-Development.jpeg"
+        alt="FrontEndDev"
+        usemap="#workmap"
+      />
+
+      <map name="workmap">
+        <area
+          shape="poly"
+          coords="26.368098422496587,27.64186814128936,190.81640089163238,27.159615054869608,176.83106138545958,196.9127014746227,111.72689471879289,216.6850780178326,37.94217249657066,196.9127014746227"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+          alt=""
+        />
+        <area
+          shape="poly"
+          coords="518.6713391632372,96.9705718449931,704.4352280521261,96.9705718449931,687.6528206447188,288.52149777091904,613.0000428669409,309.93353480795605,535.4537465706446,289.10020147462274"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+          alt=""
+        />
+        <area
+          shape="poly"
+          coords="105.1243998628255,238.5895276063101,218.85575274348395,238.99140517832654,208.0050582990395,358.75092163923193,162.99477023319588,370.80724879972576,112.76007373113825,355.93777863511673"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+          alt=""
+        />
+        <area
+          shape="poly"
+          coords="229.4068072702329,120.87206361454048,325.4068072702329,59.87206361454048,321.4068072702329,27.87206361454048,350.4068072702329,26.87206361454048,388.4068072702329,51.87206361454048,386.4068072702329,77.87206361454048,498.4068072702329,146.87206361454048,498.4068072702329,267.8720636145405,482.4068072702329,280.8720636145405,490.4068072702329,315.8720636145405,404.4068072702329,372.8720636145405,370.4068072702329,349.8720636145405,305.4068072702329,389.8720636145405,253.4068072702329,356.8720636145405,258.4068072702329,313.8720636145405,248.4068072702329,245.87206361454048,272.4068072702329,236.87206361454048,258.4068072702329,219.87206361454048,247.4068072702329,222.87206361454048,239.4068072702329,201.87206361454048,246.4068072702329,154.87206361454048"
+          href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer"
+          alt=""
+        />
+      </map>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+  </body>
+</html>
